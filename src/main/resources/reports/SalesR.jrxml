@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.21.3.final using JasperReports Library version 6.21.3-4a3078d20785ebe464f18037d738d12fc98c13cf  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="SalesR" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="18610f19-2e43-45e7-9371-9f2e8b12f42b">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="ClothifyStores"/>
+	<queryString language="SQL">
+		<![CDATA[select OrderId, ProductCode,  Date, OrderQty, discount from searchorder]]>
+	</queryString>
+	<field name="OrderId" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="OrderId"/>
+		<property name="com.jaspersoft.studio.field.label" value="OrderId"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="searchorder"/>
+	</field>
+	<field name="ProductCode" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="ProductCode"/>
+		<property name="com.jaspersoft.studio.field.label" value="ProductCode"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="searchorder"/>
+	</field>
+	<field name="Date" class="java.sql.Date">
+		<property name="com.jaspersoft.studio.field.name" value="Date"/>
+		<property name="com.jaspersoft.studio.field.label" value="Date"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="searchorder"/>
+	</field>
+	<field name="OrderQty" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="OrderQty"/>
+		<property name="com.jaspersoft.studio.field.label" value="OrderQty"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="searchorder"/>
+	</field>
+	<field name="discount" class="java.lang.Double">
+		<property name="com.jaspersoft.studio.field.name" value="discount"/>
+		<property name="com.jaspersoft.studio.field.label" value="discount"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="searchorder"/>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="76" splitType="Stretch">
+			<image>
+				<reportElement x="-10" y="0" width="90" height="71" uuid="a4367afa-aa73-49ac-a147-ce0c8db663da"/>
+				<imageExpression><![CDATA["C:/Users/LG/Desktop/Javafx Coursework/Clothify-Store/src/main/resources/img/logo.jpg"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="138" y="0" width="360" height="71" uuid="5aadfb30-f04a-47b8-bdc9-ed18b9b80728"/>
+				<textElement>
+					<font size="53" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Clothify Store]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="46" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="210" height="43" uuid="69b392d1-b72a-4249-b06f-e213e6a6d72f"/>
+				<textElement>
+					<font size="25"/>
+				</textElement>
+				<text><![CDATA[Inventory Report]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="410" y="11" width="160" height="30" uuid="698e54b8-3dc3-420c-b758-120255f52ca2"/>
+				<textFieldExpression><![CDATA[new java.text.SimpleDateFormat("yyyy-MM-dd").format(new java.util.Date())]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<staticText>
+				<reportElement x="7" y="17" width="60" height="26" uuid="62c2c8f0-8533-41a5-8029-ee22c109604c"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[OrderId]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="130" y="17" width="79" height="26" uuid="58f73662-147f-4979-8d82-ac26bb2fbfb1"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[ProductCode]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="255" y="17" width="60" height="26" uuid="8b57548c-c1db-43c0-9b41-195a2a5fe62d"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Date]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="357" y="17" width="60" height="26" uuid="2f015e97-4a44-4aa1-8b65-9249cae19bc6"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[OrderQty]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="459" y="17" width="60" height="26" uuid="16ef15c2-9651-42ed-b584-87a1d4548859"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Discount]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="30" width="67" height="30" uuid="31f2c53a-236b-4549-bcac-a9e60cb517b4"/>
+				<textFieldExpression><![CDATA[$F{OrderId}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="130" y="30" width="80" height="30" uuid="b6cc79eb-2f22-4a9a-9395-90c247ee603f"/>
+				<textFieldExpression><![CDATA[$F{ProductCode}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="240" y="30" width="75" height="30" uuid="8bb6c8ee-d06e-4eab-bd71-b83b60ad34ff"/>
+				<textFieldExpression><![CDATA[$F{Date}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="340" y="30" width="80" height="30" uuid="9c405a0e-f2d3-481e-9696-12df3c596b58"/>
+				<textFieldExpression><![CDATA[$F{OrderQty}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="450" y="30" width="80" height="30" uuid="49603da4-69cf-467a-b792-75102eb8ef02"/>
+				<textFieldExpression><![CDATA[$F{discount}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="70" splitType="Stretch">
+			<staticText>
+				<reportElement x="-11" y="26" width="170" height="30" uuid="cbfd3821-c827-4a08-b2b8-85b93b84bc61"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Clothify Store (PVT)Ltd]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="445" y="10" width="100" height="20" uuid="24c0f486-2ec6-4502-9bc0-7e9438c14ef2"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Panadura]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="420" y="40" width="124" height="30" uuid="0c645313-7020-4371-9595-34602f0dc57c"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[clothify@sample.com]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+</jasperReport>

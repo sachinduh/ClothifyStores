@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.21.3.final using JasperReports Library version 6.21.3-4a3078d20785ebe464f18037d738d12fc98c13cf  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Employee" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="8d499ae1-adae-4654-b59e-e9a7c7cd5e44">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="ClothifyStores"/>
+	<queryString language="SQL">
+		<![CDATA[select EmployeeId, Title, Name, Email, Password, Username, Salary, Position from employee]]>
+	</queryString>
+	<field name="EmployeeId" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="EmployeeId"/>
+		<property name="com.jaspersoft.studio.field.label" value="EmployeeId"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="employee"/>
+	</field>
+	<field name="Title" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="Title"/>
+		<property name="com.jaspersoft.studio.field.label" value="Title"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="employee"/>
+	</field>
+	<field name="Name" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="Name"/>
+		<property name="com.jaspersoft.studio.field.label" value="Name"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="employee"/>
+	</field>
+	<field name="Email" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="Email"/>
+		<property name="com.jaspersoft.studio.field.label" value="Email"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="employee"/>
+	</field>
+	<field name="Password" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="Password"/>
+		<property name="com.jaspersoft.studio.field.label" value="Password"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="employee"/>
+	</field>
+	<field name="Username" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="Username"/>
+		<property name="com.jaspersoft.studio.field.label" value="Username"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="employee"/>
+	</field>
+	<field name="Salary" class="java.math.BigDecimal">
+		<property name="com.jaspersoft.studio.field.name" value="Salary"/>
+		<property name="com.jaspersoft.studio.field.label" value="Salary"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="employee"/>
+	</field>
+	<field name="Position" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="Position"/>
+		<property name="com.jaspersoft.studio.field.label" value="Position"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="employee"/>
+	</field>
+	<group name="EmployeeId">
+		<groupExpression><![CDATA[$F{EmployeeId}]]></groupExpression>
+	</group>
+	<group name="Title">
+		<groupExpression><![CDATA[$F{Title}]]></groupExpression>
+	</group>
+	<group name="Name">
+		<groupExpression><![CDATA[$F{Name}]]></groupExpression>
+	</group>
+	<group name="Email">
+		<groupExpression><![CDATA[$F{Email}]]></groupExpression>
+	</group>
+	<group name="Password">
+		<groupExpression><![CDATA[$F{Password}]]></groupExpression>
+	</group>
+	<group name="Username">
+		<groupExpression><![CDATA[$F{Username}]]></groupExpression>
+	</group>
+	<group name="Salary">
+		<groupExpression><![CDATA[$F{Salary}]]></groupExpression>
+	</group>
+	<group name="Position">
+		<groupExpression><![CDATA[$F{Position}]]></groupExpression>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="77" splitType="Stretch">
+			<image>
+				<reportElement x="-10" y="0" width="90" height="71" uuid="c1f2fa95-8dbb-4771-b6b0-164072517486"/>
+				<imageExpression><![CDATA["C:/Users/LG/Desktop/Javafx Coursework/Clothify-Store/src/main/resources/img/logo.jpg"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="138" y="0" width="360" height="71" uuid="b7ea7e0d-58d2-4234-9f7e-fb0db6a51028"/>
+				<textElement>
+					<font size="53" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Clothify Store]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="55" splitType="Stretch">
+			<staticText>
+				<reportElement x="20" y="0" width="210" height="43" uuid="1c080c96-6687-40cb-8195-503d5086473c"/>
+				<textElement>
+					<font size="25"/>
+				</textElement>
+				<text><![CDATA[Inventory Report]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="17" width="71" height="26" uuid="bf316e97-2ab2-4d5b-8142-99675a2899d7"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[EmployeeId]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="88" y="17" width="50" height="26" uuid="ca484260-1dc1-459c-a790-55cc4b2eb10c"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Title]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="150" y="18" width="60" height="26" uuid="ceba9530-7806-4923-a6f1-31e25bb9ed52"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="220" y="17" width="60" height="26" uuid="279bbab0-9642-4ea4-8c65-6ba165870afa"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Email]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="290" y="19" width="71" height="22" uuid="bcf7069d-4dc3-4f69-bb53-e5e502f35059"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Password]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="374" y="17" width="66" height="26" uuid="6a7927f5-5bcf-4568-a814-16295b8edd7a"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Username]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="450" y="17" width="48" height="26" uuid="2c1b2688-4db9-4c76-a40b-cad2903b2c23"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Salary]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="507" y="18" width="59" height="26" uuid="9f7048ae-468d-46f3-803f-8f1ccf2520b8"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Position]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch">
+			<textField>
+				<reportElement x="-3" y="20" width="74" height="30" uuid="86bef250-28bc-4385-9f80-537cbdc7700e"/>
+				<textFieldExpression><![CDATA[$F{EmployeeId}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="89" y="20" width="49" height="30" uuid="5a6f8e9a-3480-4b7b-96f1-1eec7004fd6b"/>
+				<textFieldExpression><![CDATA[$F{Title}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="150" y="20" width="60" height="30" uuid="224e5088-6809-42f3-9c18-1d00e989b65c"/>
+				<textFieldExpression><![CDATA[$F{Name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="220" y="20" width="60" height="30" uuid="e131dcaa-4c25-4fab-98de-5d0e8842db66"/>
+				<textFieldExpression><![CDATA[$F{Email}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="290" y="20" width="71" height="30" uuid="ee6e8027-10e3-41ed-be4e-e3e57f4bec1e"/>
+				<textFieldExpression><![CDATA[$F{Password}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="370" y="20" width="70" height="30" uuid="644efe6e-7e4d-4845-a1f2-6865b90d7361"/>
+				<textFieldExpression><![CDATA[$F{Username}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="450" y="20" width="48" height="30" uuid="eab959c2-c598-4c4c-86c0-c6357b6b5105"/>
+				<textFieldExpression><![CDATA[$F{Salary}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="507" y="20" width="59" height="30" uuid="50cb1b79-d82b-439c-a23f-42b545f07b0b"/>
+				<textFieldExpression><![CDATA[$F{Position}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="90" splitType="Stretch">
+			<staticText>
+				<reportElement x="-11" y="30" width="170" height="30" uuid="7c8b89b0-9c0a-4412-99fb-e5a5d5c7829e"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Clothify Store (PVT)Ltd]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="445" y="10" width="100" height="20" uuid="3c67d149-f811-4811-b408-ebcddbc18e74"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Panadura]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="420" y="40" width="124" height="30" uuid="5b7beaf2-188f-475e-afb5-fff6979f4b87"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[clothify@sample.com]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+</jasperReport>

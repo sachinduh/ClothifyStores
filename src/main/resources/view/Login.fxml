@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="601.0" prefWidth="962.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.Controller.Login.LoginController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#0e406f" height="76.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="962.0" />
+      <ImageView fitHeight="76.0" fitWidth="85.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/logo.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="325.0" prefHeight="76.0" text="Clothify Store" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="48.0" />
+         </font>
+      </Label>
+      <JFXButton layoutX="874.0" layoutY="25.0" onAction="#btnLogOutOnAction" style="-fx-background-color: white;" text="Log Out">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+         <opaqueInsets>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </opaqueInsets>
+      </JFXButton>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#e2ecf5" height="381.0" layoutX="49.0" layoutY="130.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="376.0" />
+      <Label layoutX="95.0" layoutY="155.0" prefHeight="53.0" prefWidth="298.0" text="Welcome To The ">
+         <font>
+            <Font name="System Bold Italic" size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="122.0" layoutY="208.0" text="Clothify Store">
+         <font>
+            <Font name="System Bold Italic" size="36.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="207.0" fitWidth="248.0" layoutX="134.0" layoutY="278.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/0810ef_6a2bc49fee81411a935bac9120a2557b~mv2.jpg" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#e1ebeb" height="388.0" layoutX="549.0" layoutY="135.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="346.0" />
+      <Label layoutX="675.0" layoutY="155.0" text="LOGIN" textFill="#0b79b9">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="635.0" layoutY="242.0" text="Username">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="636.0" layoutY="326.0" text="Password">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtUserName" layoutX="636.0" layoutY="278.0" prefHeight="25.0" prefWidth="231.0" promptText="username" />
+      <JFXPasswordField fx:id="txtPassword" layoutX="636.0" layoutY="357.0" prefHeight="25.0" prefWidth="231.0" promptText="password" />
+      <Label layoutX="664.0" layoutY="393.0" text="Forget Password?">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <JFXButton layoutX="779.0" layoutY="390.0" onAction="#btnClickOnAction" style="-fx-background-color: white;" text="Click">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="678.0" layoutY="434.0" onAction="#btnLoginOnAction" style="-fx-background-color: #0e406f;" text="LOGIN" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </JFXButton>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#a8b6c3" height="51.0" layoutY="552.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="962.0" />
+      <Label layoutX="14.0" layoutY="568.0" text="Clothify Store (PVT) Ltd">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="860.0" layoutY="560.0" text="Panadura">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="834.0" layoutY="579.0" text="clothify@sample.com">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="597.0" layoutY="495.0" text="If you have an Account ?">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <JFXButton layoutX="752.0" layoutY="491.0" onAction="#btnClickHereOnAction" style="-fx-background-color: white;" text="Click Here">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

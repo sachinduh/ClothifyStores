@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="716.0" prefWidth="1072.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.Controller.Interface.Admin.AdminDashboardController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#0e406f" height="85.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="1072.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#a8b6c3" height="51.0" layoutY="665.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="1072.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#acdee1" height="51.0" layoutY="85.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="1072.0" />
+      <ImageView fitHeight="85.0" fitWidth="92.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/logo.jpg" />
+         </image>
+      </ImageView>
+      <JFXButton layoutX="981.0" layoutY="28.0" onAction="#btnLogOutOnAction" style="-fx-background-color: white;" text="Log Out">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="380.0" layoutY="14.0" text="Clothify Store" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="48.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="681.0" text="Clothify Store (PVT) Ltd">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="989.0" layoutY="673.0" text="Panadura">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="931.0" layoutY="693.0" text="Clothify@sample.com">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblManage" layoutX="330.0" layoutY="98.0" style="-fx-underline:true" text="Manage Employee">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblProduct" layoutX="497.0" layoutY="98.0" style="-fx-underline:true" text="Product Manage">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblSupplier" layoutX="649.0" layoutY="98.0" style="-fx-underline:true" text="Supplier Manage">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblOrder" layoutX="805.0" layoutY="98.0" style="-fx-underline:true" text="Search Order">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblReports" layoutX="942.0" layoutY="98.0" style="-fx-underline:true" text="Manage Reports">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#a4ccf2" height="495.0" layoutX="43.0" layoutY="154.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="417.0" />
+      <Label layoutX="103.0" layoutY="166.0" text="Employee Registration Form">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="85.0" layoutY="338.0" text="Name">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <JFXComboBox fx:id="cmbPosition" editable="true" layoutX="286.0" layoutY="411.0" promptText="Position" />
+      <Label layoutX="84.0" layoutY="413.0" text="Email">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="284.0" layoutY="284.0" text="User  Name">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="78.0" layoutY="482.0" text="Password">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="296.0" layoutY="482.0" text="Confirm Password">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <JFXButton layoutX="200.0" layoutY="594.0" onAction="#btnSubmitOnAction" style="-fx-background-color: black;" text="Submit Form" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="353.0" layoutY="594.0" onAction="#btnCancelOnAction" prefHeight="30.0" prefWidth="85.0" style="-fx-background-color: #0e406f;" text="Cancel" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXTextField fx:id="txtName" layoutX="83.0" layoutY="368.0" prefHeight="25.0" prefWidth="131.0" promptText="name" />
+<!--      <JFXTextField fx:id="txtLastName" layoutX="283.0" layoutY="302.0" prefHeight="25.0" prefWidth="131.0" />-->
+      <JFXTextField fx:id="txtEmail" layoutX="83.0" layoutY="440.0" prefHeight="25.0" prefWidth="209.0" promptText="email" />
+      <JFXTextField fx:id="txtUserName" layoutX="283.0" layoutY="306.0" prefHeight="25.0" prefWidth="124.0" promptText="uaername" />
+      <Label layoutX="575.0" layoutY="182.0" text="System Overview :">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </Label>
+      <Label layoutX="615.0" layoutY="241.0" text="01. Total Sales">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="615.0" layoutY="281.0" text="02. Sales Growth">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <LineChart alternativeColumnFillVisible="true" layoutX="553.0" layoutY="312.0" prefHeight="192.0" prefWidth="357.0" title="Sales Growth">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </LineChart>
+      <Label layoutX="612.0" layoutY="497.0" text="03. Low Stock Alerts">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="611.0" layoutY="533.0" text="04. Current Inventory Levels">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="611.0" layoutY="570.0" text="05. System Uptime">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="611.0" layoutY="609.0" text="06. Error Reports">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="93.0" layoutY="222.0" text="Employee ID">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtEmployeeId" layoutX="89.0" layoutY="248.0" prefHeight="25.0" prefWidth="120.0" promptText="id" />
+      <Label layoutX="286.0" layoutY="338.0" text="Salary">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <JFXComboBox fx:id="cmbTitle" layoutX="87.0" layoutY="300.0" prefHeight="25.0" prefWidth="120.0" promptText="Title" />
+      <JFXTextField fx:id="txtSalary" layoutX="286.0" layoutY="367.0" prefHeight="25.0" prefWidth="131.0" promptText="salary" />
+      <JFXPasswordField fx:id="txtPassword" layoutX="77.0" layoutY="509.0" promptText="password" />
+      <JFXPasswordField fx:id="txtPassword1" layoutX="293.0" layoutY="511.0" promptText="password" />
+   </children>
+</AnchorPane>

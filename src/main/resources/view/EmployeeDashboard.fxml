@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="716.0" prefWidth="1072.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.Controller.Interface.Employee.EmployeeDashboardController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#0e406f" height="85.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="1072.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#a8b6c3" height="51.0" layoutY="672.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="1072.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#acdee1" height="51.0" layoutY="85.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="1072.0" />
+      <ImageView fitHeight="85.0" fitWidth="92.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/logo.jpg" />
+         </image>
+      </ImageView>
+      <JFXButton layoutX="979.0" layoutY="28.0" onAction="#btnLogOutOnAction" style="-fx-background-color: white;" text="Log Out">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="380.0" layoutY="8.0" text="Clothify Store" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="48.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="689.0" text="Clothify Store (PVT) Ltd">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="987.0" layoutY="681.0" text="Panadura">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="945.0" layoutY="701.0" text="clothify@sample.com">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblProduct" layoutX="522.0" layoutY="102.0" style="-fx-underline:true" text="Product Manage">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblSupplier" layoutX="662.0" layoutY="102.0" style="-fx-underline:true" text="Supplier Manage">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblOrder" layoutX="807.0" layoutY="102.0" style="-fx-underline:true" text="Place Order">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblReports" layoutX="929.0" layoutY="102.0" style="-fx-underline:true" text="Manage Reports">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="575.0" layoutY="182.0" text="System Overview :">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </Label>
+      <Label layoutX="615.0" layoutY="241.0" text="01. Total Sales">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="615.0" layoutY="281.0" text="02. Sales Growth">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="612.0" layoutY="497.0" text="03. Low Stock Alerts">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="611.0" layoutY="533.0" text="04. Current Inventory Levels">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="611.0" layoutY="570.0" text="05. System Uptime">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="611.0" layoutY="609.0" text="06. Error Reports">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <LineChart layoutX="640.0" layoutY="318.0" prefHeight="163.0" prefWidth="305.0" title="Sales Growth">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </LineChart>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#dee5eb" height="448.0" layoutX="43.0" layoutY="194.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="429.0" />
+      <Label layoutX="148.0" layoutY="218.0" text="Daily To Do List">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+      <JFXCheckBox fx:id="chboxDo2" layoutX="95.0" layoutY="318.0" prefHeight="18.0" prefWidth="224.0" text="Check Inventory Levels">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXCheckBox>
+      <JFXCheckBox fx:id="chboxDo4" layoutX="93.0" layoutY="391.0" prefHeight="18.0" prefWidth="224.0" text="Restock shelves">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXCheckBox>
+      <JFXCheckBox fx:id="chboxDo5" layoutX="93.0" layoutY="427.0" prefHeight="18.0" prefWidth="224.0" text="Assist customers with queries">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXCheckBox>
+      <JFXCheckBox fx:id="chboxDo6" layoutX="93.0" layoutY="462.0" prefHeight="18.0" prefWidth="224.0" text="Process New Orders">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXCheckBox>
+      <JFXCheckBox fx:id="chboxDo7" layoutX="93.0" layoutY="498.0" prefHeight="18.0" prefWidth="224.0" text="Clean the store">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXCheckBox>
+      <JFXCheckBox fx:id="chboxDo8" layoutX="91.0" layoutY="532.0" prefHeight="18.0" prefWidth="224.0" text="Reslove customer complains">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXCheckBox>
+      <JFXCheckBox fx:id="chboxDo1" layoutX="97.0" layoutY="278.0" prefHeight="18.0" prefWidth="224.0" text="Open &amp; prepare the store">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXCheckBox>
+      <JFXCheckBox fx:id="chboxDo3" layoutX="93.0" layoutY="356.0" prefHeight="18.0" prefWidth="224.0" text="Process sales transactions">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXCheckBox>
+      <JFXCheckBox fx:id="chboxDoo9" layoutX="91.0" layoutY="567.0" prefHeight="18.0" prefWidth="224.0" text="Fulfill online orders">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXCheckBox>
+      <JFXCheckBox fx:id="chboxDo10" layoutX="91.0" layoutY="600.0" prefHeight="18.0" prefWidth="224.0" text="Secure the store">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXCheckBox>
+      <JFXTextField fx:id="txtEmpId" layoutX="43.0" layoutY="150.0" promptText="Employee Id" />
+      <JFXButton layoutX="980.0" layoutY="630.0" onAction="#btnBackOnAction" prefHeight="31.0" prefWidth="71.0" style="-fx-background-color: black;" text="Back" textFill="#a5dcdd">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

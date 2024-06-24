@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.21.3.final using JasperReports Library version 6.21.3-4a3078d20785ebe464f18037d738d12fc98c13cf  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Supplier" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="713361a2-4477-4fc7-a754-985aff7836fe">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="ClothifyStores"/>
+	<queryString language="SQL">
+		<![CDATA[select  SupplierId, Name, Company, Email, Products, Qty from supplier]]>
+	</queryString>
+	<field name="SupplierId" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="SupplierId"/>
+		<property name="com.jaspersoft.studio.field.label" value="SupplierId"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="supplier"/>
+	</field>
+	<field name="Name" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="Name"/>
+		<property name="com.jaspersoft.studio.field.label" value="Name"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="supplier"/>
+	</field>
+	<field name="Company" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="Company"/>
+		<property name="com.jaspersoft.studio.field.label" value="Company"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="supplier"/>
+	</field>
+	<field name="Email" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="Email"/>
+		<property name="com.jaspersoft.studio.field.label" value="Email"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="supplier"/>
+	</field>
+	<field name="Products" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="Products"/>
+		<property name="com.jaspersoft.studio.field.label" value="Products"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="supplier"/>
+	</field>
+	<field name="Qty" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="Qty"/>
+		<property name="com.jaspersoft.studio.field.label" value="Qty"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="supplier"/>
+	</field>
+	<group name="SupplierId">
+		<groupExpression><![CDATA[$F{SupplierId}]]></groupExpression>
+	</group>
+	<group name="Name">
+		<groupExpression><![CDATA[$F{Name}]]></groupExpression>
+	</group>
+	<group name="Company">
+		<groupExpression><![CDATA[$F{Company}]]></groupExpression>
+	</group>
+	<group name="Email">
+		<groupExpression><![CDATA[$F{Email}]]></groupExpression>
+	</group>
+	<group name="Products">
+		<groupExpression><![CDATA[$F{Products}]]></groupExpression>
+	</group>
+	<group name="Qty">
+		<groupExpression><![CDATA[$F{Qty}]]></groupExpression>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="73" splitType="Stretch">
+			<image>
+				<reportElement x="-10" y="0" width="90" height="71" uuid="12f2728a-3ffe-4650-9ee5-5b68c6f29312"/>
+				<imageExpression><![CDATA["C:/Users/LG/Desktop/Javafx Coursework/Clothify-Store/src/main/resources/img/logo.jpg"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="140" y="0" width="360" height="71" uuid="35150865-6e45-4efb-ac3f-adeecd4de1c4"/>
+				<textElement>
+					<font size="53" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Clothify Store]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="46" splitType="Stretch">
+			<staticText>
+				<reportElement x="20" y="0" width="210" height="43" uuid="f2e95c2c-af1a-40db-97c6-190a7afb8c60"/>
+				<textElement>
+					<font size="25"/>
+				</textElement>
+				<text><![CDATA[Inventory Report]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="17" width="71" height="26" uuid="c882ecf7-5ec1-4026-ae54-4f7c46d20eec"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[SupplierId]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="100" y="17" width="71" height="26" uuid="28e21b1c-34ba-4f65-9932-9cd278ba7e1d"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="190" y="20" width="71" height="26" uuid="3328aa3d-fa63-40e5-bca1-b946d04b60be"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Company]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="300" y="20" width="71" height="26" uuid="f109323e-1628-4b7a-b3de-494e7de0c987"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Email]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="390" y="17" width="71" height="26" uuid="c42a3738-52c8-40cc-899e-4fe86ed1d10f"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Products]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="480" y="17" width="71" height="26" uuid="d7758d94-2869-4833-a67f-bbd3f71fa3fc"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Qty]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="20" width="71" height="30" uuid="9b701595-d15e-4b07-bac9-fb0658a91498"/>
+				<textFieldExpression><![CDATA[$F{SupplierId}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="90" y="20" width="81" height="30" uuid="25cdc4f6-042b-4d36-adbf-aa16f332f3dc"/>
+				<textFieldExpression><![CDATA[$F{Name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="190" y="20" width="80" height="30" uuid="78ef87b0-81d3-4caa-9092-8cf0ef58a5e3"/>
+				<textFieldExpression><![CDATA[$F{Company}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="300" y="20" width="71" height="30" uuid="a893c90d-87b7-4096-8b4e-ff9605ab587e"/>
+				<textFieldExpression><![CDATA[$F{Email}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="380" y="20" width="90" height="30" uuid="5a555dbb-13ca-4839-b19e-b7d4c340f5c1"/>
+				<textFieldExpression><![CDATA[$F{Products}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="480" y="20" width="71" height="30" uuid="e7054b8d-2844-4964-9c59-0252b7903666"/>
+				<textFieldExpression><![CDATA[$F{Qty}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="77" splitType="Stretch">
+			<staticText>
+				<reportElement x="-11" y="30" width="170" height="30" uuid="d7da96e9-75f8-41d5-8c47-a1756bfdb988"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Clothify Store (PVT)Ltd]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="445" y="10" width="100" height="20" uuid="fdf23762-2646-4204-8e5b-5c603c33bfd4"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Panadura]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="420" y="40" width="124" height="30" uuid="015351f5-acce-44f7-a76a-c917e6a0749e"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[clothify@sample.com]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+</jasperReport>
